@@ -14,5 +14,19 @@ class MyTheme {
 
   static ThemeData lightTheme = ThemeData(
     primaryColor: primaryLightColor,
-  );
+      appBarTheme: AppBarTheme(
+          backgroundColor: primaryLightColor,
+          centerTitle: true,
+          shape: RoundedRectangleBorder(
+              borderRadius: BorderRadius.only(
+                  bottomLeft: Radius.circular(30),
+                  bottomRight: Radius.circular(30)))),
+      textTheme: TextTheme(
+        titleLarge: TextStyle(
+            fontSize: 22, fontWeight: FontWeight.bold, color: whiteColor),
+        titleMedium: TextStyle(
+            fontSize: 20, fontWeight: FontWeight.bold, color: blackColor),
+        titleSmall: TextStyle(
+            fontSize: 18, fontWeight: FontWeight.bold, color: blackColor),
+      ));
 }
