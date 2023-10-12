@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_app_news_c9_sun_3/category/tab_item.dart';
+import 'package:flutter_app_news_c9_sun_3/home/news/news_container.dart';
+import 'package:flutter_app_news_c9_sun_3/home/tab/tab_item.dart';
 import 'package:flutter_app_news_c9_sun_3/model/SourceResponse.dart';
-import 'package:flutter_app_news_c9_sun_3/news/news_container.dart';
 
 class TabContainer extends StatefulWidget {
   List<Source> sourcesList;

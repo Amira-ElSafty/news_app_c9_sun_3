@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_app_news_c9_sun_3/category/category_details.dart';
-import 'package:flutter_app_news_c9_sun_3/category/category_fragments.dart';
+import 'package:flutter_app_news_c9_sun_3/home/category/category_details.dart';
+import 'package:flutter_app_news_c9_sun_3/home/category/category_fragments.dart';
 import 'package:flutter_app_news_c9_sun_3/home/home_drawer.dart';
 import 'package:flutter_app_news_c9_sun_3/model/category.dart';
 import 'package:flutter_app_news_c9_sun_3/my_theme.dart';
