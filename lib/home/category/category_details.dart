@@ -3,6 +3,7 @@ import 'package:flutter_app_news_c9_sun_3/home/category/cubit/category_details_v
 import 'package:flutter_app_news_c9_sun_3/home/category/cubit/states.dart';
 import 'package:flutter_app_news_c9_sun_3/home/tab/tab_container.dart';
 import 'package:flutter_app_news_c9_sun_3/model/category.dart';
+import 'package:flutter_app_news_c9_sun_3/repository/source/repository/source_repository_impl.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
 class CategoryDetails extends StatefulWidget {
@@ -16,7 +17,8 @@ class CategoryDetails extends StatefulWidget {
 }
 
 class _CategoryDetailsState extends State<CategoryDetails> {
-  CategoryDetailsViewModel viewModel = CategoryDetailsViewModel();
+  CategoryDetailsViewModel viewModel =
+      CategoryDetailsViewModel(injectSourceRepositoryContract());
 
   @override
   void initState() {

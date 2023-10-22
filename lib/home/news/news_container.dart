@@ -4,6 +4,7 @@ import 'package:flutter_app_news_c9_sun_3/home/news/cubit/news_container_view_mo
 import 'package:flutter_app_news_c9_sun_3/home/news/cubit/states.dart';
 import 'package:flutter_app_news_c9_sun_3/home/news/news_item.dart';
 import 'package:flutter_app_news_c9_sun_3/model/SourceResponse.dart';
+import 'package:flutter_app_news_c9_sun_3/repository/news/repository/news_repository_impl.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
 class NewsContainer extends StatefulWidget {
@@ -16,7 +17,8 @@ class NewsContainer extends StatefulWidget {
 }
 
 class _NewsContainerState extends State<NewsContainer> {
-  NewsContainerViewModel viewModel = NewsContainerViewModel();
+  NewsContainerViewModel viewModel = NewsContainerViewModel(
+      repositoryContract: injectNewsRepositoryContract());
 
   @override
   void initState() {
